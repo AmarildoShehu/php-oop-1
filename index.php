@@ -20,3 +20,8 @@ class Movie
         echo "Title: {$this->title}, Genre: {$this->genre}, Release Year: {$this->releaseYear}\n";
     }
 }
+
+// Istanziamento oggetti Movie
+$inception = new Movie("Inception", "Sci-Fi", 2010);
+$provaAPrendermi = new Movie("Prova a prendermi", "Crime", 2002);
+$fightClub = new Movie("Fight Club", "Drama", 1999);
