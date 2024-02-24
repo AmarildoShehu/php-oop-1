@@ -25,3 +25,16 @@ class Movie
 $inception = new Movie("Inception", "Sci-Fi", 2010);
 $provaAPrendermi = new Movie("Prova a prendermi", "Crime", 2002);
 $fightClub = new Movie("Fight Club", "Drama", 1999);
+
+
+//Stampa 
+echo "Inception:\n";
+$inception->displayInfo();
+
+echo "\nProva a prendermi:\n";
+$provaAPrendermi->displayInfo();
+
+echo "\nFight Club:\n";
+$fightClub->displayInfo();
+
+?>
