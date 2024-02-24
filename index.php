@@ -1,5 +1,25 @@
 <?php
 
+class Director
+{
+    // Variabili d'istanza
+    public $name;
+    public $birthYear;
+
+    // Costruttore
+    public function __construct($name, $birthYear)
+    {
+        $this->name = $name;
+        $this->birthYear = $birthYear;
+    }
+
+    // Metodo
+    public function displayInfo()
+    {
+        echo "Director: {$this->name}, Birth Year: {$this->birthYear}\n";
+    }
+}
+
 //proprieta 
 class Movie
 {
@@ -28,13 +48,13 @@ $fightClub = new Movie("Fight Club", "Drama", 1999);
 
 
 //Stampa 
-echo "Inception:\n";
+echo "<b>Inception:</b>\n";
 $inception->displayInfo();
 
-echo "\nProva a prendermi:\n";
+echo "\n<b>Prova a prendermi:</b>\n";
 $provaAPrendermi->displayInfo();
 
-echo "\nFight Club:\n";
+echo "\n<b>Fight Club:</b>\n";
 $fightClub->displayInfo();
 
 ?>
