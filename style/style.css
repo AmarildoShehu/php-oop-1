@@ -1,27 +1,39 @@
 body {
-  background: linear-gradient(to right, #000000, #808080);
-  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    #111,
+    #333
+  ); /* Sfondo con gradient scuro */
+  color: #fff;
+  font-family: "Arial", sans-serif;
   padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
-  color: #ffffff;
+  color: #e50914;
 }
 
 .movie-container {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .movie-title {
-  color: #ffffff;
+  color: #e50914; /* Rosso Netflix */
+  margin-bottom: 10px;
 }
 
 .movie-info {
-  color: #ffffff;
-  margin: 1.5rem 0;
+  color: #ccc;
+  margin: 0.5rem 0;
 }
 
 .actor-list {
@@ -31,4 +43,10 @@ h1 {
 
 .actor-list li {
   margin-bottom: 5px;
+}
+
+/* Stile icone */
+.fa {
+  margin-right: 5px;
+  color: #e50914;
 }
